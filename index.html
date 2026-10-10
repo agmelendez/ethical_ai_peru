@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Presentaciones ejecutivas y biblioteca digital interactiva EthicalAI para autoridades y líderes universitarios en el Perú">
+  <title>EthicalAI Perú | Menú Principal de Presentaciones y Biblioteca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Saira:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="hub">
+  <a class="skip-link" href="#mainContent" id="skipLink">Saltar al contenido principal</a>
+
+  <!-- Barra Superior Institucional -->
+  <header class="topbar" role="banner">
+    <div class="brand-group">
+      <!-- Logo Oficial del Proyecto en la Esquina Superior -->
+      <a href="index.html" class="brand-official-logo" aria-label="EthicalAI - Menú Principal">
+        <img src="LogoProjecto.png" alt="EthicalAI - Logo Oficial del Proyecto Erasmus+" class="topbar-project-logo">
+      </a>
+
+      <!-- Insignias de Afiliación Oficial -->
+      <div class="institutional-ribbon" aria-label="Afiliaciones institucionales oficiales">
+        <span class="inst-tag ucr" title="Universidad de Costa Rica - CIODD">UCR · CIODD</span>
+        <span class="inst-tag uned" title="Universidad Estatal a Distancia, Costa Rica">UNED</span>
+        <span class="inst-tag umch" title="Universidad Marcelino Champagnat, Lima - Perú">UMCH · Perú</span>
+        <span class="inst-tag eu" title="Cofinanciado por el Programa Erasmus+ de la Unión Europea">Erasmus+ 101179117</span>
+      </div>
+    </div>
+
+    <div class="topbar-actions" role="toolbar" aria-label="Herramientas y Accesos">
+      <!-- Acceso Directo a Biblioteca Interactiva -->
+      <a href="biblioteca.html" class="topbar-nav-link" title="Consultar biblioteca interactiva de recursos y bibliografía">
+        <span>📚</span>
+        <span>Biblioteca Digital</span>
+      </a>
+
+      <!-- Selector de Idioma -->
+      <button id="langButton" class="text-button lang-toggle" aria-label="Cambiar idioma (Español / English)" title="Cambiar idioma (T)">
+        <span class="lang-flag" aria-hidden="true">🌐</span>
+        <span id="langLabel">EN</span>
+      </button>
+
+      <!-- Accesibilidad -->
+      <button id="a11yButton" class="text-button" aria-expanded="false" aria-controls="a11yDialog" aria-label="Opciones de accesibilidad">
+        <span aria-hidden="true">♿</span>
+        <span class="btn-label" id="a11yBtnLabel">Accesibilidad</span>
+      </button>
+
+      <!-- Referencias APA 7 -->
+      <button id="refsButton" class="text-button" aria-expanded="false" aria-controls="referencesDialog" aria-label="Ver referencias bibliográficas APA 7">
+        <span aria-hidden="true">📚</span>
+        <span class="btn-label" id="refsBtnLabel">APA 7</span>
+      </button>
+
+      <!-- Gestión de Licencia Creative Commons -->
+      <button id="ccHubBtn" class="text-button" aria-expanded="false" aria-controls="ccLicenseDialog" aria-label="Gestionar licencia Creative Commons" onclick="document.getElementById('ccLicenseDialog').showModal()">
+        <span aria-hidden="true">⚖️</span>
+        <span class="btn-label">Licencia CC</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Contenido Principal: Selector de Presentaciones y Recursos -->
+  <main id="mainContent" class="deck-picker">
+    <div class="picker-container">
+      <div class="picker-copy">
+        <p class="eyebrow" id="pickerEyebrow">Proyecto Erasmus+ 101179117 · Seminario Internacional UMCH Lima</p>
+        <h1 id="pickerTitle">Decisiones Universitarias para una Inteligencia Artificial Responsable</h1>
+        <p class="lead" id="pickerLead">
+          Dos presentaciones ejecutivas basadas exclusivamente en evidencia documental auditada para líderes, autoridades y tomadores de decisión de la educación superior, junto a una biblioteca interactiva de recursos.
+        </p>
+        <div class="host-badge">
+          <span class="host-pin">📍</span>
+          <span id="hostDetails"><strong>IX Seminario Internacional de Investigación UMCH</strong> · Santiago de Surco, Lima, Perú · 14 de octubre</span>
+        </div>
+      </div>
+
+      <!-- Tarjetas de Navegación a Páginas Independientes -->
+      <div class="deck-options" role="region" aria-label="Seleccionar presentación o recurso">
+        <!-- Presentación 1 -->
+        <a href="presentacion-1.html" class="deck-card deck-one" aria-label="Abrir Presentación 1: Uso responsable de la IA en la educación superior">
+          <div class="deck-card-header">
+            <span class="deck-number">01</span>
+            <span class="deck-duration" id="d1DurationTag">40 min · 36 diapositivas</span>
+          </div>
+          <strong id="d1Title">Uso responsable de la IA en la educación superior</strong>
+          <span class="deck-desc" id="d1Subtitle">Retos, oportunidades, evaluación pedagógica y marco de decisiones institucionales</span>
+          <span class="deck-cta" id="d1Cta">Iniciar presentación completa →</span>
+        </a>
+
+        <!-- Presentación 2 -->
+        <a href="presentacion-2.html" class="deck-card deck-two" aria-label="Abrir Presentación 2: ¿Cómo construir una cultura de inteligencia artificial?">
+          <div class="deck-card-header">
+            <span class="deck-number">02</span>
+            <span class="deck-duration" id="d2DurationTag">20 min · 18 diapositivas</span>
+          </div>
+          <strong id="d2Title">¿Cómo construir una cultura de inteligencia artificial?</strong>
+          <span class="deck-desc" id="d2Subtitle">Liderazgo, madurez organizacional, alfabetización diferenciada y ruta de implementación</span>
+          <span class="deck-cta" id="d2Cta">Iniciar presentación completa →</span>
+        </a>
+
+        <!-- Recurso Adicional: Biblioteca Digital e Interactiva -->
+        <a href="biblioteca.html" class="deck-card deck-three" aria-label="Abrir Biblioteca Digital e Interactiva de Inteligencia Artificial">
+          <div class="deck-card-header">
+            <span class="deck-number">03</span>
+            <span class="deck-duration">46 documentos · Búsqueda & Citas</span>
+          </div>
+          <strong>Biblioteca Digital e Interactiva</strong>
+          <span class="deck-desc">Explore los 46 documentos del corpus auditado, marcos de decisión internacional, guías éticas y descargue citas en formato APA 7 y BibTeX.</span>
+          <span class="deck-cta">Consultar recursos y bibliografía →</span>
+        </a>
+      </div>
+
+      <div class="quick-shortcuts-bar" aria-label="Atajos de teclado e información">
+        <span class="shortcut-item"><kbd>T</kbd> <span id="hintLang">Traducir ES/EN</span></span>
+        <span class="shortcut-item"><kbd>A</kbd> <span id="hintA11y">Accesibilidad</span></span>
+        <span class="shortcut-item"><span>🚀 Seleccione una presentación para abrir el visor interactivo o ingrese a la biblioteca digital</span></span>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER INSTITUCIONAL COMPLETO CON LOGOS Y CREATIVE COMMONS -->
+  <footer class="project-footer" role="contentinfo">
+    <div class="footer-container">
+      <!-- Sección de Socios y Logos del Consorcio -->
+      <div class="footer-partners-block">
+        <div class="footer-partners-header">
+          <p class="eyebrow">Consorcio Académico Internacional · Programa Erasmus+ CBHE N° 101179117</p>
+          <h3>Instituciones y Universidades Participantes</h3>
+          <a href="https://www.ethicalaiucr.info/COM_prtContractual.php" target="_blank" rel="noopener noreferrer" class="partners-portal-link" title="Ver detalle del consorcio en la web oficial ethicalaiucr.info">
+            Directorio Oficial de Socios Contractuales ↗
+          </a>
+        </div>
+
+        <!-- Banner con Logos Oficiales de las Instituciones -->
+        <div class="partners-strip-card">
+          <img src="LogosProyecto.png" alt="Logos oficiales de las instituciones socias del consorcio EthicalAI: UNED, UH, ALPE, Sapienza Università di Roma, UNIFÉ, Universitat de València, Universidad de Costa Rica, Universidad Marcelino Champagnat, Pixel" class="partners-strip-img">
+        </div>
+
+        <!-- Insignias e Identificadores Institucionales Interactivos con Logo y Enlace Oficial -->
+        <div class="partners-badges-grid" aria-label="Universidades e instituciones socias con enlaces a sus sitios oficiales">
+          <a href="https://www.ucr.ac.cr/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de la Universidad de Costa Rica (UCR)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/CR_UCR.png" alt="UCR" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇨🇷 Universidad de Costa Rica (UCR) · CIODD</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://www.uned.ac.cr/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de la Universidad Estatal a Distancia (UNED)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/CR_UNED.png" alt="UNED" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇨🇷 Universidad Estatal a Distancia (UNED)</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://www.uh.ac.cr/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de la Universidad Hispanoamericana (UH)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/CR_UH.jpg" alt="UH" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇨🇷 Universidad Hispanoamericana (UH)</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://umch.edu.pe/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de la Universidad Marcelino Champagnat (UMCH)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/PE_UMCH.png" alt="UMCH" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇵🇪 Universidad Marcelino Champagnat (UMCH)</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://www.unife.edu.pe/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de la Universidad Femenina del Sagrado Corazón (UNIFÉ)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/PE_UNIFE.png" alt="UNIFÉ" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇵🇪 Universidad Femenina del Sagrado Corazón (UNIFÉ)</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://www.uv.es/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de la Universitat de València (UV)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/ES_UniValencia.png" alt="UV" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇪🇸 Universitat de València (UV)</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://www.alqueriaeducatius.org/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de Associació Empresarial l’Alqueria Projectes Educatius (ALPE)">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/ES_ALPE.png" alt="ALPE" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇪🇸 Associació ALPE Projectes Educatius</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://web.uniroma1.it/pdta/home/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de Sapienza Università di Roma - Dipartimento PDTA">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/IT_Sapienza.png" alt="Sapienza" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇮🇹 Sapienza Università di Roma</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+          <a href="https://www.pixel-online.net/" target="_blank" rel="noopener noreferrer" class="partner-tag" title="Sitio oficial de Pixel Associazione">
+            <span class="partner-tag-logo-wrap"><img src="assets/img/partners/IT_Pixel.jpg" alt="Pixel" class="partner-tag-logo"></span>
+            <span class="partner-tag-name">🇮🇹 Pixel Associazione</span>
+            <span class="partner-tag-icon">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Grilla Informativa Principal (3 Columnas) -->
+      <div class="footer-main-grid">
+        <!-- Columna 1: Identidad y Misión -->
+        <div class="footer-col">
+          <div class="footer-brand-title">
+            <img src="LogoProjecto.png" alt="EthicalAI" class="footer-logo-img">
+          </div>
+          <p class="footer-slogan">
+            "Designing an ethical standard for the use of Artificial Intelligence in university education"
+          </p>
+          <ul class="footer-meta-list">
+            <li><strong>Iniciativa:</strong> Proyecto Erasmus+ Capacity Building in Higher Education</li>
+            <li><strong>Código oficial:</strong> 101179117</li>
+            <li><strong>Sede anfitriona en Perú:</strong> IX Seminario Internacional de Investigación UMCH</li>
+            <li><strong>Ubicación:</strong> Santiago de Surco, Lima, Perú</li>
+          </ul>
+        </div>
+
+        <!-- Columna 2: Cofinanciación Unión Europea y Disclaimer -->
+        <div class="footer-col">
+          <div class="eu-funding-box">
+            <div class="eu-logo-card">
+              <img src="co-funded-eu.png" alt="Co-funded by the European Union" class="eu-official-logo-img">
+            </div>
+            <p class="eu-disclaimer-text">
+              Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them.
+            </p>
+          </div>
+        </div>
+
+        <!-- Columna 3: Licencia Creative Commons Gestionable -->
+        <div class="footer-col">
+          <div class="cc-license-card">
+            <div class="cc-header">
+              <span class="cc-icons-badge">CC BY-NC-SA 4.0</span>
+              <span class="cc-license-title">Creative Commons License</span>
+            </div>
+            <p class="cc-summary-text">
+              This work is licensed under a <strong>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</strong>. Reutilización académica y pedagógica autorizada con debida atribución.
+            </p>
+            <button class="btn-manage-cc" onclick="document.getElementById('ccLicenseDialog').showModal()">
+              ⚖️ Gestionar Licencia y Cita Oficial
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Inferior de Derechos -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Proyecto EthicalAI · Consorcio Internacional Erasmus+ 101179117.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="index.html">Menú Principal</a>
+          <a href="presentacion-1.html">Presentación 01</a>
+          <a href="presentacion-2.html">Presentación 02</a>
+          <a href="biblioteca.html">Biblioteca Digital</a>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener">Términos Legales CC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Gestión de Licencia Creative Commons -->
+  <dialog id="ccLicenseDialog" class="app-dialog cc-dialog" aria-labelledby="ccDialogTitle">
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow">Derechos de Autor y Reutilización Académica</p>
+        <h2 id="ccDialogTitle">Licencia Creative Commons CC BY-NC-SA 4.0</h2>
+      </div>
+      <button id="closeCcDialog" aria-label="Cerrar ventana de licencia" class="close-icon-btn" onclick="document.getElementById('ccLicenseDialog').close()">×</button>
+    </div>
+    <div class="dialog-content">
+      <p style="font-size: 0.92rem; line-height: 1.55; color: var(--ink);">
+        Los materiales, presentaciones y recursos desarrollados en el marco del <strong>Proyecto Erasmus+ 101179117 EthicalAI</strong> se publican bajo la <strong>Licencia Internacional Creative Commons Atribución-NoComercial-CompartirIgual 4.0 (CC BY-NC-SA 4.0)</strong>.
+      </p>
+
+      <div class="cc-dialog-terms">
+        <div class="cc-term-card">
+          <strong>✅ Libertad de Compartir</strong>
+          <p>Usted puede copiar, proyectar y redistribuir el material en cualquier medio o formato para fines educativos, académicos y de investigación universitaria.</p>
+        </div>
+        <div class="cc-term-card">
+          <strong>✅ Libertad de Adaptar</strong>
+          <p>Usted puede remezclar, transformar y crear obras derivadas para apoyar la toma de decisiones institucionales o diseñar planes curriculares locales.</p>
+        </div>
+        <div class="cc-term-card">
+          <strong>⚠️ Atribución Obligatoria (BY)</strong>
+          <p>Debe otorgar el crédito correspondiente al consorcio EthicalAI y a las universidades autoras, proporcionar un enlace a la licencia e indicar si se realizaron cambios.</p>
+        </div>
+        <div class="cc-term-card">
+          <strong>🚫 Uso No Comercial (NC)</strong>
+          <p>No puede hacer uso del material con fines comerciales ni lucrativos directos o indirectos.</p>
+        </div>
+        <div class="cc-term-card">
+          <strong>🔄 Compartir Igual (SA)</strong>
+          <p>Si remezcla o transforma este material, debe difundir sus aportes bajo esta misma licencia Creative Commons CC BY-NC-SA 4.0.</p>
+        </div>
+      </div>
+
+      <!-- Generador de Citas de Atribución -->
+      <div class="cc-citation-generator">
+        <h4>Generador de Atribución Oficial para Reutilización</h4>
+        <p style="font-size: 0.8rem; color: var(--ink-secondary); margin-bottom: 0.6rem;">
+          Copie la fórmula de atribución requerida para incluir en sus presentaciones, documentos de política institucional o sitios web:
+        </p>
+
+        <div class="citation-box" id="ccApaText">
+Proyecto Erasmus+ EthicalAI. (2026). <em>Materiales y presentaciones para la adopción responsable de la inteligencia artificial en la educación superior en el Perú</em>. Consorcio UCR, UNED, UH, UMCH, UNIFÉ, UV, Sapienza, ALPE, Pixel.
+        </div>
+
+        <div class="citation-actions">
+          <button id="copyCcApaBtn" class="btn-primary" style="font-size: 0.82rem; padding: 0.45rem 0.85rem;" onclick="navigator.clipboard.writeText('Proyecto Erasmus+ EthicalAI. (2026). Materiales y presentaciones para la adopción responsable de la inteligencia artificial en la educación superior en el Perú. Consorcio UCR, UNED, UH, UMCH, UNIFÉ, UV, Sapienza, ALPE, Pixel.').then(()=>alert('¡Cita copiada al portapapeles!'))">
+            📋 Copiar Cita APA 7
+          </button>
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer" class="btn-export-outline" style="font-size: 0.82rem; padding: 0.45rem 0.85rem;">
+            ↗️ Ver Código Legal en Creative Commons
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal de Referencias Bibliográficas APA 7 -->
+  <dialog id="referencesDialog" class="app-dialog references-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow" id="refEyebrow">Corpus Documental Auditado</p>
+        <h2 id="dialogTitle">Referencias APA 7</h2>
+      </div>
+      <button id="closeRefs" aria-label="Cerrar ventana de referencias" class="close-icon-btn">×</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-intro" id="refIntro">
+        Todas las fuentes y cifras corresponden exclusivamente al corpus JSON auditado para el proyecto EthicalAI Perú. Las páginas citadas corresponden al documento primario de origen.
+      </p>
+      <div id="referencesList" class="references-list" role="list"></div>
+      <div style="margin-top: 1.5rem; text-align: center;">
+        <a href="biblioteca.html" class="btn-primary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+          📚 Abrir Biblioteca Completa con los 46 Documentos y Citas →
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal de Opciones de Accesibilidad -->
+  <dialog id="a11yDialog" class="app-dialog a11y-dialog" aria-labelledby="a11yTitle">
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow" id="a11yEyebrow">Configuración</p>
+        <h2 id="a11yTitle">Accesibilidad e Inclusión</h2>
+      </div>
+      <button id="closeA11y" aria-label="Cerrar menú de accesibilidad" class="close-icon-btn">×</button>
+    </div>
+    <div class="dialog-content">
+      <div class="a11y-options-grid">
+        <div class="a11y-item">
+          <div>
+            <strong id="a11yContrastTitle">Alto Contraste</strong>
+            <p id="a11yContrastDesc">Optimiza la relación de contraste cromático para baja visión.</p>
+          </div>
+          <button id="contrastToggle" class="switch-button" aria-pressed="false">Activar</button>
+        </div>
+
+        <div class="a11y-item">
+          <div>
+            <strong id="a11yFontTitle">Tipografía Aumentada</strong>
+            <p id="a11yFontDesc">Incrementa la escala del texto para facilitar la lectura.</p>
+          </div>
+          <button id="fontSizeToggle" class="switch-button" aria-pressed="false">Activar</button>
+        </div>
+
+        <div class="a11y-item">
+          <div>
+            <strong id="a11yDyslexiaTitle">Fuente de Alta Legibilidad</strong>
+            <p id="a11yDyslexiaDesc">Aplica espaciado amplio y tipografía neutra.</p>
+          </div>
+          <button id="dyslexiaToggle" class="switch-button" aria-pressed="false">Activar</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
