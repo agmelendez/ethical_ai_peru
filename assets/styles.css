@@ -1,6 +1,6 @@
 /* ==========================================================================
    EthicalAI Perú — Estilos Oficiales e Identidad Institucional
-   Afiliaciones: EthicalAI (Erasmus+) · CIODD - UCR · UNED · UMCH
+   Afiliaciones: EthicalAI (Erasmus+) · CIODD - UCR · UNED · UMCH · UNIFÉ
    ========================================================================== */
 
 :root {
@@ -243,6 +243,7 @@ button:focus-visible, a:focus-visible, [tabindex]:focus-visible {
 .inst-tag.ucr { background: rgba(0, 80, 136, 0.8); color: #fff; border: 1px solid rgba(255, 209, 0, 0.6); }
 .inst-tag.uned { background: rgba(0, 47, 108, 0.85); color: #ffd100; border: 1px solid rgba(255, 209, 0, 0.4); }
 .inst-tag.umch { background: rgba(230, 100, 50, 0.2); color: #ffd6c2; border: 1px solid rgba(230, 100, 50, 0.5); }
+.inst-tag.unife { background: rgba(122, 31, 92, 0.3); color: #f6d3ea; border: 1px solid rgba(190, 80, 150, 0.6); }
 .inst-tag.eu { background: rgba(10, 155, 192, 0.25); color: #c4f1fc; border: 1px solid rgba(10, 155, 192, 0.6); }
 
 .topbar-actions {

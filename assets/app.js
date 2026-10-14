@@ -1,6 +1,6 @@
 /**
  * EthicalAI Perú — Motor de Presentaciones Ejecutivas
- * Erasmus+ 101179117 · Afiliaciones: EthicalAI (UCR) · CIODD · UNED · UMCH
+ * Erasmus+ 101179117 · Afiliaciones: EthicalAI (UCR) · CIODD · UNED · UMCH · UNIFÉ
  * Soporte Bilingüe (ES/EN) · Accesibilidad Universal (a11y) · Síntesis de Voz (TTS)
  */
 
@@ -175,7 +175,7 @@ const responsibleSlides = [
     kicker: { es: "Presentación Ejecutiva · Perú · 40 minutos", en: "Executive Presentation · Peru · 40 minutes" },
     title: { es: "Uso responsable de la IA en la educación superior", en: "Responsible AI Adoption in Higher Education" },
     subtitle: { es: "Retos, oportunidades y decisiones institucionales para actuar con criterio", en: "Challenges, opportunities, and institutional decisions for principled action" },
-    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH" }
+    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ" }
   },
 
   // 2. Adopción regional comparada
@@ -898,7 +898,7 @@ const responsibleSlides = [
     kicker: { es: "Decisión y liderazgo", en: "Leadership & Mandate" },
     title: { es: "¿Qué capacidad institucional debe existir antes del próximo uso de IA de alto impacto?", en: "What Institutional Capacity Must Exist Before the Next High-Impact AI Adoption?" },
     subtitle: { es: "La respuesta de hoy define si la universidad lidera la transformación pedagógica o si traslada riesgos y desigualdades a su comunidad.", en: "Today's institutional choices determine whether universities lead educational transformation or surrender agency and equity." },
-    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH" }
+    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ" }
   }
 ];
 
@@ -913,7 +913,7 @@ const cultureSlides = [
     kicker: { es: "Presentación Ejecutiva · Perú · 20 minutos", en: "Executive Presentation · Peru · 20 minutes" },
     title: { es: "¿Cómo construir una cultura de inteligencia artificial?", en: "How to Build an Artificial Intelligence Culture?" },
     subtitle: { es: "De iniciativas aisladas a una capacidad universitaria compartida y sostenible", en: "From isolated experiments to a shared, sustainable institutional capability" },
-    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH" }
+    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ" }
   },
 
   // 2. Definición operativa de cultura
@@ -1187,7 +1187,7 @@ const cultureSlides = [
     kicker: { es: "Compromiso de liderazgo", en: "Leadership Commitment" },
     title: { es: "¿Qué comportamiento deberá ser normal en nuestra universidad en 12 meses?", en: "What Behavior Must Become Everyday Normal on Our Campus in 12 Months?" },
     subtitle: { es: "La cultura cambia cuando esa visión se traduce en acompañamiento real, reglas claras, seguridad psicológica y aprendizaje compartido.", en: "Culture transforms when leadership translates vision into practical mentoring, transparent boundaries, psychological safety, and continuous learning." },
-    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH" }
+    source: { es: "Proyecto EthicalAI · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ", en: "EthicalAI Project · Erasmus+ 101179117 | UCR · CIODD · UNED · UMCH · UNIFÉ" }
   }
 ];
 
@@ -1254,7 +1254,7 @@ function slideTemplate(slide) {
 
   const baseStart = `<section class="slide ${slide.type}" aria-label="${escapeHtml(title || kicker)}">
     <p class="slide-kicker">${kicker}</p>`;
-  const sourceHtml = source ? `<p class="source-line"><span>${source}</span><span>EthicalAI · UCR · UNED · UMCH</span></p></section>` : `</section>`;
+  const sourceHtml = source ? `<p class="source-line"><span>${source}</span><span>EthicalAI · UCR · UNED · UMCH · UNIFÉ</span></p></section>` : `</section>`;
 
   if (slide.type === "cover") {
     return `${baseStart}
